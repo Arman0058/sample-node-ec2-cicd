@@ -3,8 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from CI/CD on EC2 🎉");
-});
+ res.send("Hello from CI/CD on EC2 🚀 " + new Date().toISOString());
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
